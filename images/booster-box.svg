@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="500" height="420">
+  <defs>
+    <linearGradient id="boxFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="boxSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="sealShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="385" rx="200" ry="25" fill="#020617" opacity="0.6"/>
+
+  <!-- 3D Box Perspective -->
+  <!-- Top Face -->
+  <polygon points="120,90 250,30 380,90 250,150" fill="url(#boxTop)" stroke="#6366f1" stroke-width="1.5"/>
+  <!-- Front Left Face -->
+  <polygon points="120,90 250,150 250,340 120,280" fill="url(#boxFront)" stroke="#4f46e5" stroke-width="1.5"/>
+  <!-- Front Right Face -->
+  <polygon points="250,150 380,90 380,280 250,340" fill="url(#boxSide)" stroke="#3730a3" stroke-width="1.5"/>
+
+  <!-- Official Pokémon Shrink Wrap Pokéball Stamp -->
+  <g transform="translate(185, 200)" opacity="0.45">
+    <circle cx="15" cy="15" r="14" fill="none" stroke="#e0e7ff" stroke-width="2"/>
+    <line x1="1" y1="15" x2="29" y2="15" stroke="#e0e7ff" stroke-width="2"/>
+    <circle cx="15" cy="15" r="4" fill="#e0e7ff"/>
+  </g>
+  <g transform="translate(305, 170)" opacity="0.45">
+    <circle cx="15" cy="15" r="14" fill="none" stroke="#e0e7ff" stroke-width="2"/>
+    <line x1="1" y1="15" x2="29" y2="15" stroke="#e0e7ff" stroke-width="2"/>
+    <circle cx="15" cy="15" r="4" fill="#e0e7ff"/>
+  </g>
+
+  <!-- Graphics on Front -->
+  <text x="140" y="195" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#facc15" transform="rotate(25, 140, 195)">151 MEW &amp; CHARIZARD</text>
+  <text x="135" y="240" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#ffffff" transform="rotate(25, 135, 240)">BOOSTER DISPLAY BOX</text>
+  <text x="145" y="270" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#38bdf8" transform="rotate(25, 145, 270)">36 SOBRES SELLADOS</text>
+
+  <!-- Factory Sealed Stamp Badge -->
+  <rect x="270" y="250" width="95" height="30" rx="6" fill="#10b981" transform="rotate(-25, 270, 250)"/>
+  <text x="276" y="270" font-family="'Inter', sans-serif" font-weight="900" font-size="11" fill="#ffffff" transform="rotate(-25, 270, 250)">FACTORY SEALED</text>
+  
+  <!-- Plastic Sheen Line -->
+  <polygon points="120,120 250,180 250,220 120,160" fill="url(#sealShine)"/>
+</svg>

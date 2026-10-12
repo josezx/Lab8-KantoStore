@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanto Store | Tu tienda especializada en cartas coleccionables Pokémon TCG</title>
+  <meta name="description" content="Kanto Store: Catálogo centralizado de singles y productos sellados de Pokémon TCG con estado de conservación real y transparente, envíos protegidos y pagos flexibles." />
+  <meta name="keywords" content="Pokemon TCG, cartas pokemon, singles pokemon, booster box, elite trainer box, kanto store, charizard ex, estado mint, near mint" />
+  <meta name="author" content="Kanto Store" />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Google Fonts: Outfit (Titulares) & Inter (Cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos principal (CSS Puro) -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. NAVEGACIÓN HEADER & NAVBAR
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Logotipo & Nombre comercial -->
+      <a href="#inicio" class="brand-logo" id="brand-logo-link" aria-label="Kanto Store Inicio">
+        <img src="images/logo.svg" alt="Kanto Store Logo" width="220" height="52" />
+      </a>
+
+      <!-- Menú de Enlaces de Navegación -->
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active" id="nav-link-inicio">Inicio</a>
+        <a href="#destacadas" class="nav-link" id="nav-link-destacadas">Destacadas</a>
+        <a href="#catalogo" class="nav-link" id="nav-link-catalogo">Catálogo de Singles</a>
+        <a href="#sellados" class="nav-link" id="nav-link-sellados">Productos Sellados</a>
+        <a href="#conservacion" class="nav-link" id="nav-link-conservacion">Estado de Conservación</a>
+        <a href="#wishlist" class="nav-link" id="nav-link-wishlist">Wishlist</a>
+        <a href="#beneficios" class="nav-link" id="nav-link-beneficios">Beneficios</a>
+      </nav>
+
+      <!-- Botones de Acción (Wishlist, Carrito & Menú Móvil) -->
+      <div class="nav-actions">
+        <!-- Botón Wishlist con Contador Dinámico -->
+        <button class="action-btn" id="wishlist-nav-btn" aria-label="Ver Lista de Deseos" title="Lista de Deseos">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="action-badge badge-wishlist" id="wishlist-count-badge">0</span>
+        </button>
+
+        <!-- Botón Carrito de Compras con Contador Dinámico -->
+        <button class="action-btn" id="cart-toggle-btn" aria-label="Abrir Carrito de Compras" title="Carrito de Compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="action-badge badge-cart" id="cart-count-badge">0</span>
+        </button>
+
+        <!-- Botón Hamburguesa para Móvil -->
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir Menú Móvil">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. SECCIÓN HERO
+         ====================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>ESPECIALISTAS EN CARTAS POKÉMON TCG</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tu tienda especializada en cartas coleccionables <span class="highlight-gold">Pokémon TCG</span>
+          </h1>
+
+          <p class="hero-description">
+            Kanto Store centraliza el mercado de cartas coleccionables para eliminar la desconfianza al ofrecer un catálogo organizado por expansión y rareza, mostrando el estado de conservación real y transparente de cada carta y producto sellado.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-primary" id="hero-cta-catalogo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              Explorar Catálogo
+            </a>
+            <a href="#sellados" class="btn btn-secondary" id="hero-cta-sellados">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+              Ver Productos Sellados
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>+1,500</h3>
+              <p>Singles Inspeccionadas</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Estado de conservación transparente</p>
+            </div>
+            <div class="stat-item">
+              <h3>✓</h3>
+              <p>Sin grading de terceros</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vitrina Visual 3D Hero -->
+        <div class="hero-visual">
+          <div class="hero-card-stage">
+            <div class="hero-card-halo"></div>
+            <div class="floating-hero-card" id="hero-floating-card">
+              <img src="images/charizard-ex.svg" alt="Charizard ex Ilustración Especial" width="320" height="448" />
+            </div>
+            <div class="hero-badge-tag">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div>
+                <strong>Estado Mint Certificado</strong>
+                <span>Foil sin rayones &bull; Toploader incluido</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. SECCIÓN DE CARTAS DESTACADAS (SINGLES)
+         ====================================================================== -->
+    <section class="catalog-section" id="destacadas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Lo más buscado</span>
+          <h2 class="section-title">Cartas Destacadas de Colección</h2>
+          <p class="section-subtitle">
+            Selección exclusiva de las cartas más deseadas de las expansiones más icónicas, verificadas por nuestros evaluadores.
+          </p>
+        </div>
+
+        <div class="products-grid" id="featured-singles-grid">
+          <!-- Renderizado dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. CATÁLOGO DE SINGLES CON FILTROS DINÁMICOS
+         ====================================================================== -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Catálogo Completo</span>
+          <h2 class="section-title">Busca y Filtra Cartas Individuales</h2>
+          <p class="section-subtitle">
+            Encuentra exactamente la carta que necesitas para tu carpeta de colección o mazo competitivo con filtrado instantáneo.
+          </p>
+        </div>
+
+        <!-- Panel de Filtrado en Tiempo Real -->
+        <div class="filter-panel" id="filter-panel">
+          <!-- Fila de Búsqueda -->
+          <div class="search-bar-row">
+            <div class="search-input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="filter-search" class="search-input" placeholder="Buscar por nombre de Pokémon (ej. Charizard, Pikachu, Mewtwo)..." autocomplete="off" />
+              <button id="clear-search-btn" class="clear-search-btn" aria-label="Limpiar búsqueda">&times;</button>
+            </div>
+          </div>
+
+          <!-- Controles de Filtros Dropdowns -->
+          <div class="filters-grid">
+            <!-- Filtro Expansión / Set -->
+            <div class="filter-group">
+              <label for="filter-set" class="filter-label">Expansión / Set</label>
+              <select id="filter-set" class="filter-select">
+                <option value="all">Todas las Expansiones</option>
+                <option value="151">Escarlata y Púrpura - 151</option>
+                <option value="corona">Corona Astral</option>
+                <option value="cielos">Cielos Evolutivos</option>
+                <option value="zenit">Zenit Supremo</option>
+                <option value="paldea">Evoluciones en Paldea</option>
+                <option value="fusion">Golpe Fusión</option>
+                <option value="tempestad">Tempestad Plateada</option>
+                <option value="astros">Astros Brillantes</option>
+              </select>
+            </div>
+
+            <!-- Filtro Rareza -->
+            <div class="filter-group">
+              <label for="filter-rarity" class="filter-label">Rareza</label>
+              <select id="filter-rarity" class="filter-select">
+                <option value="all">Todas las Rarezas</option>
+                <option value="secret">Secreta / Arte Alternativo</option>
+                <option value="ultra">Ultra Rara</option>
+                <option value="rare">Rara</option>
+                <option value="uncommon">Poco Común (Ilustración)</option>
+              </select>
+            </div>
+
+            <!-- Filtro Idioma -->
+            <div class="filter-group">
+              <label for="filter-lang" class="filter-label">Idioma</label>
+              <select id="filter-lang" class="filter-select">
+                <option value="all">Todos los Idiomas</option>
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+              </select>
+            </div>
+
+            <!-- Filtro Estado de Conservación -->
+            <div class="filter-group">
+              <label for="filter-cond" class="filter-label">Estado de Conservación</label>
+              <select id="filter-cond" class="filter-select">
+                <option value="all">Todos los Estados</option>
+                <option value="mint">Mint (M - Impecable)</option>
+                <option value="nm">Near Mint (NM - Excelente)</option>
+                <option value="played">Played (P - Jugado)</option>
+              </select>
+            </div>
+
+            <!-- Ordenamiento -->
+            <div class="filter-group">
+              <label for="filter-sort" class="filter-label">Ordenar Por</label>
+              <select id="filter-sort" class="filter-select">
+                <option value="featured">Destacados Primero</option>
+                <option value="price-asc">Precio: Menor a Mayor</option>
+                <option value="price-desc">Precio: Mayor a Menor</option>
+                <option value="name-asc">Nombre (A - Z)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Barra de Tags Activos & Contador -->
+          <div class="active-filters-bar">
+            <div class="active-tags-list" id="active-tags-list">
+              <!-- Renderizado de tags dinámicos -->
+            </div>
+            <div style="display: flex; align-items: center; gap: 1.25rem;">
+              <span class="results-count-text" id="results-count">Cargando catálogo...</span>
+              <button class="btn-reset-filters" id="reset-filters-btn">Limpiar Filtros</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grilla de Resultados del Catálogo -->
+        <div class="products-grid" id="catalog-singles-grid">
+          <!-- Renderizado dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SECCIÓN DE PRODUCTOS SELLADOS
+         ====================================================================== -->
+    <section class="sealed-section" id="sellados">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">100% Empaque Original</span>
+          <h2 class="section-title">Productos Sellados de Fábrica</h2>
+          <p class="section-subtitle">
+            Cajas completas, Elite Trainer Boxes, sobres y mazos listos para competir. Todos los productos conservan su termosellado original sin manipulaciones.
+          </p>
+        </div>
+
+        <!-- Pestañas de Categoría -->
+        <div class="sealed-tabs" id="sealed-tabs-container">
+          <button class="sealed-tab-btn active" data-category="all">Todos los Productos</button>
+          <button class="sealed-tab-btn" data-category="box">Booster Boxes (Cajas)</button>
+          <button class="sealed-tab-btn" data-category="etb">Elite Trainer Boxes (ETB)</button>
+          <button class="sealed-tab-btn" data-category="pack">Sobres de Mejora</button>
+          <button class="sealed-tab-btn" data-category="deck">Mazos de Combate</button>
+        </div>
+
+        <!-- Cuadrícula de Productos Sellados -->
+        <div class="sealed-grid" id="sealed-products-grid">
+          <!-- Renderizado dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. GUÍA INFORMATIVA DEL ESTADO DE CONSERVACIÓN
+         ====================================================================== -->
+    <section class="condition-guide-section" id="conservacion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Transparencia Total</span>
+          <h2 class="section-title">Guía de Estado de Conservación Kanto</h2>
+          <p class="section-subtitle">
+            Conoce los criterios físicos objetivos que utilizamos para clasificar cada carta. Compras exactamente lo que ves, con honestidad y sin sorpresas.
+          </p>
+        </div>
+
+        <!-- Cuadrícula de Criterios (Mint, Near Mint, Played) -->
+        <div class="condition-grid">
+          <!-- Mint -->
+          <article class="condition-card card-mint">
+            <div class="condition-header">
+              <div class="condition-title-group">
+                <h3>Mint (M)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Calificación: 9.8 - 10 / 10</span>
+              </div>
+              <span class="condition-grade-badge">Impecable</span>
+            </div>
+            <p class="condition-summary">
+              Carta extraída directamente de sobre a funda (pack fresh). No presenta ningún tipo de desgaste visible, doblez, marca de imprenta ni blanqueamiento en sus bordes.
+            </p>
+            <ul class="criteria-list">
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Centrado:</strong> Simetría visual excelente (50/50 a 60/40).</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Bordes:</strong> Limpios sin rebabas blancas (whitening).</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Superficie:</strong> Relieve foil sin rayaduras ni opacidad.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Near Mint -->
+          <article class="condition-card card-nm">
+            <div class="condition-header">
+              <div class="condition-title-group">
+                <h3>Near Mint (NM)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Calificación: 8.5 - 9.5 / 10</span>
+              </div>
+              <span class="condition-grade-badge">Excelente Estado</span>
+            </div>
+            <p class="condition-summary">
+              Carta en condición óptima de colección. Puede presentar una imperfección mínima de manipulación leve o un micro-toque casi imperceptible en un solo borde posterior.
+            </p>
+            <ul class="criteria-list">
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Centrado:</strong> Aceptable dentro del estándar de colección.</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Bordes:</strong> Micro-punto blanco aislado en dorso.</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Superficie:</strong> Brillo íntegro sin arrugas ni pliegues.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Played -->
+          <article class="condition-card card-played">
+            <div class="condition-header">
+              <div class="condition-title-group">
+                <h3>Played (P)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Calificación: 6.0 - 8.0 / 10</span>
+              </div>
+              <span class="condition-grade-badge">Para Jugadores</span>
+            </div>
+            <p class="condition-summary">
+              Carta con signos evidentes de juego en torneos (desgaste en bordes o esquinas, pequeños toques por barajeo). Es la opción más económica y 100% legal para jugar con sleeves.
+            </p>
+            <ul class="criteria-list">
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Bordes:</strong> Blanqueamiento visible en varias zonas.</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Esquinas:</strong> Suavizadas por manipulación constante.</span>
+              </li>
+              <li class="criteria-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Legalidad:</strong> Perfecta para barajas competitivas oficiales.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Banner de Garantía Transparente -->
+        <div class="guarantee-banner">
+          <div class="guarantee-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <div class="guarantee-text">
+            <h4>Garantía de Evaluación Física Propia y Transparente</h4>
+            <p>
+              En Kanto Store realizamos una <strong>inspección física individualizada</strong> bajo luz blanca neutra y aumentos ópticos para cada carta. A diferencia de las empresas de grading de terceros (como PSA o BGS), evitamos cobrar tarifas exorbitantes de certificación externa o demoras de meses: te garantizamos la condición real exacta para que colecciones y juegues con total confianza y al precio justo de mercado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SECCIÓN INTERACTIVA DE LISTA DE DESEOS (WISHLIST)
+         ====================================================================== -->
+    <section class="wishlist-section" id="wishlist">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge" style="background: rgba(244, 63, 94, 0.12); color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">
+            Colección Soñada
+          </span>
+          <h2 class="section-title">Tu Lista de Deseos Personalizada</h2>
+          <p class="section-subtitle">
+            Guarda las cartas individuales que estás buscando. Nuestro sistema registrará tus preferencias y te avisará por correo o WhatsApp cuando ingresen nuevas copias a stock.
+          </p>
+        </div>
+
+        <!-- Explicación de Alertas de Stock -->
+        <div class="wishlist-info-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <p>
+            <strong>¿Cómo funciona el sistema de alertas?</strong> Al guardar una carta en tu Wishlist con el icono de corazón, queda registrada en tu navegador (`localStorage`). Si una carta se encuentra con stock bajo o agotada, el sistema priorizará la notificación de reposición directa a tu contacto.
+          </p>
+        </div>
+
+        <!-- Barra de Herramientas de Wishlist -->
+        <div class="wishlist-toolbar">
+          <div class="wishlist-count-badge">
+            Cartas guardadas en tu Wishlist
+          </div>
+          <button class="btn btn-secondary" onclick="window.kantoStore.moveAllWishlistToCart()" style="font-size: 0.85rem; padding: 0.55rem 1.1rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Pasar Todo al Carrito
+          </button>
+        </div>
+
+        <!-- Grilla de Wishlist -->
+        <div class="wishlist-grid" id="wishlist-grid">
+          <!-- Renderizado dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. SECCIÓN DE BENEFICIOS DE KANTO STORE
+         ====================================================================== -->
+    <section class="benefits-section" id="beneficios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">¿Por qué elegirnos?</span>
+          <h2 class="section-title">Beneficios Exclusivos de Kanto Store</h2>
+          <p class="section-subtitle">
+            Diseñamos la plataforma para resolver las principales frustraciones del mercado informal de cartas coleccionables.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Beneficio 1 -->
+          <article class="benefit-card">
+            <div class="benefit-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Catálogo Centralizado</h3>
+            <p class="benefit-desc">
+              Di adiós a coordinar con decenas de vendedores dispersos en redes sociales. Encuentra cartas individuales y sellados organizados por set, idioma y rareza en un solo portal confiable.
+            </p>
+          </article>
+
+          <!-- Beneficio 2 -->
+          <article class="benefit-card">
+            <div class="benefit-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Estado Transparente</h3>
+            <p class="benefit-desc">
+              Evaluación rigurosa de conservación (Mint, Near Mint, Played). Sin falsas expectativas ni cartas en peor estado del prometido al momento de abrir tu paquete.
+            </p>
+          </article>
+
+          <!-- Beneficio 3 -->
+          <article class="benefit-card">
+            <div class="benefit-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Alertas de Stock</h3>
+            <p class="benefit-desc">
+              Gestiona tu lista de deseos interactiva y recibe recordatorios prioritarios en cuanto ingresen copias de cartas difíciles de conseguir en el mercado.
+            </p>
+          </article>
+
+          <!-- Beneficio 4 -->
+          <article class="benefit-card">
+            <div class="benefit-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Envíos Blindados y Seguros</h3>
+            <p class="benefit-desc">
+              Cada carta viaja dentro de sleeve perfecto, toploader rígido semi-sellado y sobre de burbuja impermeable. Entrega directa sin intermediarios informales.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       9. DRAWER DEL CARRITO DE COMPRAS
+       ====================================================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+    <div class="cart-drawer" id="cart-drawer">
+      <!-- Cabecera del Carrito -->
+      <div class="cart-header">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Carrito de Compras
+        </h3>
+        <button class="close-drawer-btn" id="close-cart-btn" aria-label="Cerrar carrito">&times;</button>
+      </div>
+
+      <!-- Barra de Envío Gratis -->
+      <div class="shipping-meter-wrap">
+        <div class="shipping-meter-text">
+          <span id="shipping-status-text">Envío gratis disponible</span>
+          <span style="font-weight: 700;">Meta: Bs 300</span>
+        </div>
+        <div class="shipping-bar-bg">
+          <div class="shipping-bar-fill" id="shipping-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Lista de Items en Carrito -->
+      <div class="cart-items-body" id="cart-items-body">
+        <!-- Renderizado dinámicamente con JavaScript -->
+      </div>
+
+      <!-- Pie del Carrito con Subtotales y Checkout -->
+      <div class="cart-footer">
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">Bs 0</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Envío Protegido</span>
+          <span id="cart-shipping">Bs 0</span>
+        </div>
+        <div class="cart-summary-total">
+          <span>Total</span>
+          <span id="cart-total">Bs 0</span>
+        </div>
+
+        <div class="cart-footer-actions">
+          <button class="btn-checkout" id="open-checkout-btn">
+            <span>Iniciar Checkout Seguro</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <button class="btn-clear-cart" id="clear-cart-btn">Vaciar Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       10. MODAL DE CHECKOUT Y SIMULACIÓN DE PAGO
+       ====================================================================== -->
+  <div class="modal-backdrop" id="checkout-modal-backdrop" role="dialog" aria-modal="true" aria-label="Finalizar Compra">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>Finalizar Compra & Checkout</h3>
+        <button class="modal-close-btn" id="close-checkout-btn" aria-label="Cerrar">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Toggle: Comprar como Invitado o Cliente Registrado -->
+        <div class="checkout-toggle-row">
+          <button type="button" class="checkout-type-btn active" id="btn-mode-guest">Comprar como Invitado</button>
+          <button type="button" class="checkout-type-btn" id="btn-mode-user">Cliente Registrado</button>
+        </div>
+
+        <form id="checkout-form">
+          <!-- Formulario Datos del Comprador -->
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="input-name" class="form-label">Nombre y Apellido *</label>
+              <input type="text" id="input-name" name="fullName" class="form-input" placeholder="Ej. Ash Ketchum" required />
+            </div>
+            <div class="form-group">
+              <label for="input-email" class="form-label">Correo Electrónico *</label>
+              <input type="email" id="input-email" name="email" class="form-input" placeholder="ash@pueblopaleta.com" required />
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="input-phone" class="form-label">Teléfono / WhatsApp *</label>
+              <input type="tel" id="input-phone" name="phone" class="form-input" placeholder="+51 987 654 321" required />
+            </div>
+            <div class="form-group">
+              <label for="input-city" class="form-label">Ciudad / Región *</label>
+              <input type="text" id="input-city" name="city" class="form-input" placeholder="Pueblo Paleta / Lima" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="input-address" class="form-label">Dirección de Entrega Completa *</label>
+            <input type="text" id="input-address" name="address" class="form-input" placeholder="Av. Laboratorio Prof. Oak #151" required />
+          </div>
+
+          <!-- Selector Interactivo de Métodos de Pago -->
+          <h4 class="payment-selector-title">Selecciona tu Método de Pago Flexible:</h4>
+          <div class="payment-methods-grid">
+            <!-- 1. QR -->
+            <div class="payment-method-card active" data-method="qr" id="pay-method-qr">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>1. Pago por QR</span>
+            </div>
+
+            <!-- 2. Transferencia Bancaria -->
+            <div class="payment-method-card" data-method="transfer" id="pay-method-transfer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="21" x2="21" y2="21"></line>
+                <line x1="6" y1="18" x2="6" y2="10"></line>
+                <line x1="10" y1="18" x2="10" y2="10"></line>
+                <line x1="14" y1="18" x2="14" y2="10"></line>
+                <line x1="18" y1="18" x2="18" y2="10"></line>
+                <polygon points="12 2 2 8 22 8"></polygon>
+              </svg>
+              <span>2. Transferencia</span>
+            </div>
+
+            <!-- 3. Pago Contra Entrega -->
+            <div class="payment-method-card" data-method="cod" id="pay-method-cod">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M6 12h.01M18 12h.01"></path>
+              </svg>
+              <span>3. Contra Entrega</span>
+            </div>
+          </div>
+
+          <!-- Caja de Detalles: Pago por QR -->
+          <div class="payment-info-box" id="payment-info-qr">
+            <div class="qr-display-box">
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                Escanea el código QR desde tu billetera digital o app bancaria (Yape / Plin / Pix / CoDi / QR Interbancario):
+              </p>
+              <div class="qr-image-frame">
+                <img src="images/qr-payment.svg" alt="Código QR de Pago Kanto Store" width="170" height="170" />
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">
+                Titular: <strong>Kanto Store TCG S.A.C.</strong> &bull; RUC: 20608899123
+              </p>
+            </div>
+          </div>
+
+          <!-- Caja de Detalles: Transferencia Bancaria -->
+          <div class="payment-info-box" id="payment-info-bank" style="display: none;">
+            <div class="bank-details-box">
+              <div class="bank-row">
+                <div>
+                  <strong>Banco de Crédito (BCP)</strong>
+                  <div style="color: var(--text-muted); font-size: 0.8rem;">Cta. Corriente Soles: 191-9988221-0-45</div>
+                </div>
+                <button type="button" class="copy-btn" onclick="window.kantoStore.copyToClipboard('191-9988221-0-45', 'N° BCP copiado')">Copiar</button>
+              </div>
+              <div class="bank-row">
+                <div>
+                  <strong>BBVA Banco Continental</strong>
+                  <div style="color: var(--text-muted); font-size: 0.8rem;">Cta. Ahorros: 0011-0456-0200889911</div>
+                </div>
+                <button type="button" class="copy-btn" onclick="window.kantoStore.copyToClipboard('0011-0456-0200889911', 'N° BBVA copiado')">Copiar</button>
+              </div>
+              <div class="bank-row">
+                <div>
+                  <strong>Código Interbancario (CCI)</strong>
+                  <div style="color: var(--text-muted); font-size: 0.8rem;">002-191-009988221045-52</div>
+                </div>
+                <button type="button" class="copy-btn" onclick="window.kantoStore.copyToClipboard('002-191-009988221045-52', 'CCI copiado')">Copiar</button>
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
+                Adjunta la constancia al finalizar o compártela con nuestro equipo por WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Caja de Detalles: Pago Contra Entrega -->
+          <div class="payment-info-box" id="payment-info-cod" style="display: none;">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              <p style="margin-bottom: 0.5rem;">
+                <strong>📦 Pago en Puerta al Recibir el Pedido:</strong>
+              </p>
+              <p>
+                Cancela en efectivo exacto o con tarjeta mediante terminal POS móvil cuando el courier certificado entregue el paquete protegido en tu domicilio. Sin recargo adicional.
+              </p>
+            </div>
+          </div>
+
+          <!-- Resumen de Compra en Checkout -->
+          <div class="checkout-order-summary">
+            <div class="summary-line">
+              <span>Subtotal Artículos:</span>
+              <span id="checkout-summary-subtotal">Bs 0</span>
+            </div>
+            <div class="summary-line">
+              <span>Embalaje Protector (Toploaders + Sleeves):</span>
+              <span style="color: var(--cond-mint); font-weight: 700;">INCLUIDO GRATIS</span>
+            </div>
+            <div class="summary-total-line">
+              <span>Total a Confirmar:</span>
+              <span id="checkout-summary-total">Bs 0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;" id="confirm-order-btn">
+            Confirmar Pedido y Generar Recibo
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       11. MODAL DE CONFIRMACIÓN DE PEDIDO / RECIBO DE ÉXITO
+       ====================================================================== -->
+  <div class="modal-backdrop" id="order-success-backdrop" role="dialog" aria-modal="true" aria-label="Confirmación de pedido">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 style="color: var(--cond-mint);">¡Pedido Confirmado!</h3>
+        <button class="modal-close-btn" id="close-success-btn">&times;</button>
+      </div>
+      <div class="modal-body order-success-box">
+        <div class="success-icon-halo">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <h2>¡Gracias por tu compra en Kanto Store!</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+          Tu pedido ha sido registrado con éxito en nuestro inventario. Tus cartas serán empaquetadas con mangas protectoras y toploaders sellados.
+        </p>
+
+        <div>Código Único de Seguimiento:</div>
+        <div class="order-code-badge" id="order-code-display">KS-984210</div>
+
+        <!-- Tarjeta de Recibo Detallado -->
+        <div class="order-receipt-card" id="order-receipt-content">
+          <!-- Renderizado dinámicamente con JavaScript -->
+        </div>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#" target="_blank" class="btn btn-primary" id="whatsapp-share-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            Notificar por WhatsApp
+          </a>
+          <button type="button" class="btn btn-secondary" id="print-receipt-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Imprimir Comprobante
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       12. MODAL DE VISTA RÁPIDA / INSPECCIÓN DE CARTA
+       ====================================================================== -->
+  <div class="modal-backdrop" id="quickview-modal-backdrop" role="dialog" aria-modal="true" aria-label="Detalles de la carta">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>Examen de Condición & Ficha Técnica</h3>
+        <button class="modal-close-btn" id="close-quickview-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="quickview-body-content">
+        <!-- Renderizado dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       13. CONTENEDOR DE TOAST NOTIFICATIONS
+       ====================================================================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- ======================================================================
+       14. FOOTER PROFESIONAL & AVISO LEGAL (DISCLAIMER)
+       ====================================================================== -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna Marca -->
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="Kanto Store" width="200" height="48" />
+          <p>
+            Plataforma centralizada y especializada en el mercado de cartas coleccionables Pokémon TCG. Garantía de autenticidad, condición física transparente y despacho seguro.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">
+            📍 Envíos nacionales e internacionales blindados
+          </div>
+        </div>
+
+        <!-- Columna Navegación Rápida -->
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#destacadas">Cartas Destacadas</a></li>
+            <li><a href="#catalogo">Catálogo de Singles</a></li>
+            <li><a href="#sellados">Productos Sellados</a></li>
+            <li><a href="#conservacion">Criterios de Conservación</a></li>
+            <li><a href="#wishlist">Lista de Deseos</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Colecciones & Expansiones -->
+        <div>
+          <h4 class="footer-title">Expansiones Populares</h4>
+          <ul class="footer-links-list">
+            <li><a href="#catalogo">Escarlata y Púrpura: 151</a></li>
+            <li><a href="#catalogo">Corona Astral</a></li>
+            <li><a href="#catalogo">Cielos Evolutivos</a></li>
+            <li><a href="#catalogo">Zenit Supremo</a></li>
+            <li><a href="#catalogo">Evoluciones en Paldea</a></li>
+            <li><a href="#sellados">Elite Trainer Boxes</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Métodos de Pago y Seguridad -->
+        <div>
+          <h4 class="footer-title">Métodos de Pago Aceptados</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Paga de forma flexible y segura a través de nuestros canales autorizados:
+          </p>
+          <div class="payment-badges-row">
+            <span class="pay-badge">📱 QR Yape</span>
+            <span class="pay-badge">📱 QR Plin</span>
+            <span class="pay-badge">🏦 Transf. BCP</span>
+            <span class="pay-badge">🏦 Transf. BBVA</span>
+            <span class="pay-badge">💵 Contra Entrega</span>
+            <span class="pay-badge">💳 POS Tarjetas</span>
+          </div>
+          <div style="margin-top: 1.25rem; font-size: 0.82rem; color: var(--cond-mint); display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Protección anti-dobleces Toploader incluida</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AVISO LEGAL OBLIGATORIO (DISCLAIMER ACADÉMICO) -->
+      <div class="footer-disclaimer-box">
+        <strong>AVISO LEGAL Y DESCARGO DE RESPONSABILIDAD:</strong> Kanto Store es un proyecto académico. Pokémon y Pokémon TCG son marcas registradas de Nintendo, Game Freak y The Pokémon Company. Este sitio no está afiliado ni respaldado por dichas entidades. Todas las imágenes, nombres y marcas registradas de personajes de Pokémon se utilizan únicamente con fines ilustrativos y educativos.
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Kanto Store. Todos los derechos reservados.</span>
+        <span>Desarrollado con HTML5 semántico, CSS3 Puro y JavaScript Vanilla.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal de lógica de negocio y DOM -->
+  <script src="js/script.js"></script>
+</body>
+</html>

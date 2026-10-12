@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="500" height="420">
+  <defs>
+    <linearGradient id="etbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="etbTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="etbSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="250" cy="385" rx="190" ry="22" fill="#020617" opacity="0.6"/>
+
+  <!-- Isometric ETB Box -->
+  <polygon points="130,100 250,45 370,100 250,155" fill="url(#etbTop)" stroke="#7dd3fc" stroke-width="1.5"/>
+  <polygon points="130,100 250,155 250,335 130,280" fill="url(#etbGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+  <polygon points="250,155 370,100 370,280 250,335" fill="url(#etbSide)" stroke="#0284c7" stroke-width="1.5"/>
+
+  <!-- Stellar Tera Crown Art Outline -->
+  <polygon points="160,200 190,165 220,195 205,235 175,235" fill="none" stroke="#facc15" stroke-width="3" transform="rotate(24, 190, 200)"/>
+
+  <text x="145" y="210" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#f8fafc" transform="rotate(25, 145, 210)">ELITE TRAINER BOX</text>
+  <text x="150" y="240" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#facc15" transform="rotate(25, 150, 240)">CORONA ASTRAL</text>
+  <text x="155" y="268" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#e0f2fe" transform="rotate(25, 155, 268)">9 SOBRES + DADOS + FUNDAS</text>
+
+  <!-- Side Text -->
+  <text x="275" y="210" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#bae6fd" transform="rotate(-25, 275, 210)">STELLAR CROWN</text>
+</svg>

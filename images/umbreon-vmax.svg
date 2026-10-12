@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <radialGradient id="moonlight" cx="65%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="25%" stop-color="#1e1b4b"/>
+      <stop offset="70%" stop-color="#090d16"/>
+    </radialGradient>
+    <linearGradient id="secretRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="540" rx="20" fill="#0f172a" stroke="url(#secretRainbow)" stroke-width="8"/>
+
+  <!-- Card Header -->
+  <rect x="25" y="25" width="350" height="42" rx="10" fill="#1e293b"/>
+  <text x="40" y="53" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#f8fafc">Umbreon VMAX (Moonbreon)</text>
+  <text x="315" y="52" font-family="'Outfit', sans-serif" font-weight="900" font-size="20" fill="#a855f7">310 HP</text>
+
+  <!-- Illustration Window -->
+  <rect x="25" y="78" width="350" height="250" rx="14" fill="url(#moonlight)" stroke="#818cf8" stroke-width="2"/>
+  
+  <!-- Giant Moon -->
+  <circle cx="270" cy="140" r="65" fill="#fef08a" opacity="0.95"/>
+  <circle cx="285" cy="130" r="14" fill="#fde047" opacity="0.3"/>
+  <circle cx="250" cy="165" r="18" fill="#fde047" opacity="0.3"/>
+
+  <!-- Roof Silhouette with Umbreon reaching for the moon -->
+  <polygon points="25,328 120,240 220,328" fill="#020617"/>
+  <!-- Umbreon Silhouette on the rooftop -->
+  <g transform="translate(145, 170)">
+    <!-- Ears -->
+    <ellipse cx="20" cy="25" rx="5" ry="24" fill="#020617" transform="rotate(-20, 20, 25)"/>
+    <ellipse cx="20" cy="25" rx="2.5" ry="12" fill="#facc15" transform="rotate(-20, 20, 25)"/>
+    <ellipse cx="38" cy="20" rx="5" ry="24" fill="#020617" transform="rotate(15, 38, 20)"/>
+    <ellipse cx="38" cy="20" rx="2.5" ry="12" fill="#facc15" transform="rotate(15, 38, 20)"/>
+    <!-- Head & Body reaching up -->
+    <ellipse cx="30" cy="50" rx="16" ry="18" fill="#020617"/>
+    <ellipse cx="30" cy="46" rx="4" ry="4" fill="#facc15"/>
+    <ellipse cx="32" cy="78" rx="20" ry="32" fill="#020617"/>
+    <!-- Rings glowing on forehead & paws -->
+    <circle cx="30" cy="42" r="3" fill="#facc15"/>
+    <!-- Front Paw reaching up to moon -->
+    <path d="M 40 70 Q 75 40 85 20" stroke="#020617" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <ellipse cx="85" cy="20" rx="5" ry="5" fill="#facc15"/>
+    <!-- Fluffy ringed tail -->
+    <ellipse cx="5" cy="80" rx="10" ry="25" fill="#020617" transform="rotate(-30, 5, 80)"/>
+    <ellipse cx="5" cy="80" rx="4" ry="10" fill="#facc15" transform="rotate(-30, 5, 80)"/>
+  </g>
+
+  <!-- Attacks Box -->
+  <rect x="25" y="340" width="350" height="150" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="40" y="375" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#f8fafc">Habilidad: Señal Oscura</text>
+  <text x="40" y="398" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Cuando juegas esta carta para evolucionar, cambia 1 Pokémon en banca rival al puesto activo.</text>
+
+  <line x1="40" y1="415" x2="360" y2="415" stroke="#334155" stroke-width="1"/>
+
+  <text x="40" y="445" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#f8fafc">Maxi Sombra Lunar</text>
+  <text x="315" y="445" font-family="'Outfit', sans-serif" font-weight="900" font-size="18" fill="#c084fc">160</text>
+  <text x="40" y="468" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">El rival no puede jugar cartas de Energía Especial en su próximo turno.</text>
+
+  <text x="40" y="522" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ec4899">215/203 ★★★★ Arte Alternativo Secreto | Cielos Evolutivos</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="qrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="300" height="300" rx="20" fill="#ffffff"/>
+  
+  <!-- Outer Corner Target Top-Left -->
+  <rect x="30" y="30" width="60" height="60" rx="8" fill="#0f172a"/>
+  <rect x="40" y="40" width="40" height="40" rx="4" fill="#ffffff"/>
+  <rect x="50" y="50" width="20" height="20" rx="3" fill="#2563eb"/>
+
+  <!-- Outer Corner Target Top-Right -->
+  <rect x="210" y="30" width="60" height="60" rx="8" fill="#0f172a"/>
+  <rect x="220" y="40" width="40" height="40" rx="4" fill="#ffffff"/>
+  <rect x="230" y="50" width="20" height="20" rx="3" fill="#2563eb"/>
+
+  <!-- Outer Corner Target Bottom-Left -->
+  <rect x="30" y="210" width="60" height="60" rx="8" fill="#0f172a"/>
+  <rect x="40" y="220" width="40" height="40" rx="4" fill="#ffffff"/>
+  <rect x="50" y="230" width="20" height="20" rx="3" fill="#2563eb"/>
+
+  <!-- QR Matrix Blocks Simulation -->
+  <g fill="#0f172a">
+    <!-- Row 1 & 2 -->
+    <rect x="105" y="35" width="12" height="12" rx="2"/>
+    <rect x="125" y="35" width="24" height="12" rx="2"/>
+    <rect x="160" y="35" width="12" height="12" rx="2"/>
+    <rect x="180" y="35" width="15" height="12" rx="2"/>
+
+    <rect x="105" y="55" width="15" height="12" rx="2"/>
+    <rect x="135" y="55" width="12" height="12" rx="2"/>
+    <rect x="160" y="55" width="24" height="12" rx="2"/>
+
+    <rect x="105" y="75" width="30" height="12" rx="2"/>
+    <rect x="150" y="75" width="12" height="12" rx="2"/>
+    <rect x="175" y="75" width="20" height="12" rx="2"/>
+
+    <!-- Middle Sections -->
+    <rect x="35" y="105" width="15" height="12" rx="2"/>
+    <rect x="65" y="105" width="25" height="12" rx="2"/>
+    <rect x="105" y="105" width="20" height="12" rx="2"/>
+    <rect x="175" y="105" width="15" height="12" rx="2"/>
+    <rect x="205" y="105" width="25" height="12" rx="2"/>
+    <rect x="245" y="105" width="15" height="12" rx="2"/>
+
+    <rect x="35" y="125" width="25" height="12" rx="2"/>
+    <rect x="75" y="125" width="15" height="12" rx="2"/>
+    <rect x="205" y="125" width="15" height="12" rx="2"/>
+    <rect x="235" y="125" width="25" height="12" rx="2"/>
+
+    <rect x="35" y="145" width="12" height="12" rx="2"/>
+    <rect x="60" y="145" width="20" height="12" rx="2"/>
+    <rect x="220" y="145" width="30" height="12" rx="2"/>
+
+    <rect x="35" y="165" width="20" height="12" rx="2"/>
+    <rect x="70" y="165" width="20" height="12" rx="2"/>
+    <rect x="205" y="165" width="20" height="12" rx="2"/>
+    <rect x="240" y="165" width="20" height="12" rx="2"/>
+
+    <rect x="35" y="185" width="25" height="12" rx="2"/>
+    <rect x="75" y="185" width="15" height="12" rx="2"/>
+    <rect x="105" y="185" width="15" height="12" rx="2"/>
+    <rect x="180" y="185" width="25" height="12" rx="2"/>
+    <rect x="220" y="185" width="15" height="12" rx="2"/>
+    <rect x="250" y="185" width="12" height="12" rx="2"/>
+
+    <!-- Bottom Matrix Blocks -->
+    <rect x="105" y="215" width="25" height="12" rx="2"/>
+    <rect x="145" y="215" width="15" height="12" rx="2"/>
+    <rect x="175" y="215" width="20" height="12" rx="2"/>
+    <rect x="210" y="215" width="25" height="12" rx="2"/>
+    <rect x="250" y="215" width="15" height="12" rx="2"/>
+
+    <rect x="105" y="235" width="15" height="12" rx="2"/>
+    <rect x="135" y="235" width="30" height="12" rx="2"/>
+    <rect x="185" y="235" width="15" height="12" rx="2"/>
+    <rect x="225" y="235" width="15" height="12" rx="2"/>
+    <rect x="250" y="235" width="15" height="12" rx="2"/>
+
+    <rect x="115" y="255" width="20" height="12" rx="2"/>
+    <rect x="150" y="255" width="25" height="12" rx="2"/>
+    <rect x="195" y="255" width="15" height="12" rx="2"/>
+    <rect x="230" y="255" width="35" height="12" rx="2"/>
+  </g>
+
+  <!-- Center Pokeball Badge in QR -->
+  <circle cx="150" cy="150" r="32" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+  <circle cx="150" cy="150" r="28" fill="#0f172a"/>
+  <!-- Top Red half -->
+  <path d="M 124 150 A 26 26 0 0 1 176 150 Z" fill="#ef4444"/>
+  <!-- Bottom White half -->
+  <path d="M 124 150 A 26 26 0 0 0 176 150 Z" fill="#f8fafc"/>
+  <line x1="123" y1="150" x2="177" y2="150" stroke="#0f172a" stroke-width="4"/>
+  <circle cx="150" cy="150" r="9" fill="#0f172a"/>
+  <circle cx="150" cy="150" r="6" fill="#f8fafc"/>
+  <circle cx="150" cy="150" r="3" fill="#3b82f6"/>
+</svg>
